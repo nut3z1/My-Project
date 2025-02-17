@@ -15,7 +15,7 @@ const { Sider, Content } = Layout;
 export function LayoutMaster({ children }: { children: React.ReactNode }) {
   const [collapsed, setCollapsed] = useState(false);
   const {
-    token: { colorBgContainer, borderRadiusLG },
+    token: { colorBgContainer },
   } = theme.useToken();
 
   const items = [
@@ -45,11 +45,11 @@ export function LayoutMaster({ children }: { children: React.ReactNode }) {
       label: "Workspace Setting",
       children: [
         {
-          key: "1",
+          key: "workspace-setting/general",
           label: <Link href="/workspace-setting/general">General</Link>,
         },
         {
-          key: "2",
+          key: "workspace-setting/settings-packs",
           label: (
             <Link href="/workspace-setting/settings-packs">Settings Packs</Link>
           ),
@@ -65,7 +65,8 @@ export function LayoutMaster({ children }: { children: React.ReactNode }) {
           trigger={null}
           collapsible
           collapsed={collapsed}
-          className="h-[100vh]"
+          className="h-[100vh] "
+          width={230}
           theme="light"
         >
           <Button
@@ -89,11 +90,9 @@ export function LayoutMaster({ children }: { children: React.ReactNode }) {
         <Layout>
           <Content
             style={{
-              margin: "24px 16px",
-              padding: 24,
+              padding: "0 24px",
               minHeight: 280,
               background: colorBgContainer,
-              borderRadius: borderRadiusLG,
             }}
           >
             {children}
