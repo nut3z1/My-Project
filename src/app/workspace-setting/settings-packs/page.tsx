@@ -5,7 +5,7 @@ export default function SettingsPacks() {
   return (
     <div>
       <div className="font-semibold text-xl mb-2">All setting packs</div>
-      <div className="text-xs font-normal">
+      <div className="text-xs font-normal text-[#71717A]">
         Combine task types, fields, status, labels, automation together to
         quickly update multiple project.
       </div>

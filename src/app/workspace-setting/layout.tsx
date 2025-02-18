@@ -1,9 +1,9 @@
 "use client";
 import { PropsWithChildren } from "react";
 import { Tabs } from "antd";
-import { AndroidOutlined, AppleOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { SettingIcon, SettingPack } from "@/components/Icons";
 
 const Layout = (props: PropsWithChildren) => {
   const pathname = usePathname();
@@ -11,15 +11,21 @@ const Layout = (props: PropsWithChildren) => {
   const items = [
     {
       key: "workspace-setting/general",
-      label: <Link href="/workspace-setting/general">General</Link>,
-      icon: <AppleOutlined />,
+      label: (
+        <div className="flex items-center gap-2">
+          <SettingIcon />
+          <Link href="/workspace-setting/general">General</Link>
+        </div>
+      ),
     },
     {
       key: "workspace-setting/settings-packs",
       label: (
-        <Link href="/workspace-setting/settings-packs">Settings Packs</Link>
+        <div className="flex items-center gap-2">
+          <SettingPack />
+          <Link href="/workspace-setting/settings-packs">Settings Packs</Link>
+        </div>
       ),
-      icon: <AndroidOutlined />,
     },
   ];
 
@@ -27,7 +33,11 @@ const Layout = (props: PropsWithChildren) => {
     <div>
       <div className="font-medium text-base py-5">Workspace Setting</div>
       <div>
-        <Tabs defaultActiveKey={`${pathname?.substring(1)}`} items={items} />
+        <Tabs
+          defaultActiveKey={`${pathname?.substring(1)}`}
+          items={items}
+          className="3232"
+        />
       </div>
       {props.children}
     </div>

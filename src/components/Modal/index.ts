@@ -17,13 +17,12 @@ export const modalCustom = ({
     title: headerModal({ title }),
     content: content,
     icon: null,
-    okText: "Xác nhận",
-    cancelText: "Hủy",
     width: width ?? 800,
     centered: true,
     onOk() {
       console.log("OK");
     },
+    footer: null,
     onCancel() {
       console.log("Cancel");
     },

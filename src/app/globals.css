@@ -25,3 +25,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.ant-menu .ant-menu-item, .ant-menu .ant-menu-submenu .ant-menu-submenu-title{
+  padding-left: 16px !important;
+}

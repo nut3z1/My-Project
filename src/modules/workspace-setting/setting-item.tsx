@@ -11,7 +11,7 @@ export const settingItem = ({
   switch (caseSetting) {
     case CaseSetting.CHECK:
       return (
-        <div className="flex items-center gap-1 bg-[#EFF6FF] rounded-md p-1 pr-1.5">
+        <div className="flex items-center gap-1 bg-[#EFF6FF] rounded-md p-0.5 pr-1.5">
           <div>
             <CheckboxSmall />
           </div>
@@ -20,7 +20,7 @@ export const settingItem = ({
       );
     case CaseSetting.ROUND:
       return (
-        <div className="flex items-center gap-1 bg-[#FEFCE8] rounded-md p-1 pr-1.5">
+        <div className="flex items-center gap-1 bg-[#FEFCE8] rounded-md p-0.5 pr-1.5">
           <div>
             <Status />
           </div>
@@ -29,7 +29,7 @@ export const settingItem = ({
       );
     case CaseSetting.TAG:
       return (
-        <div className="flex items-center gap-1 bg-[#EFFDF5] rounded-md p-1 pr-1.5">
+        <div className="flex items-center gap-1 bg-[#EFFDF5] rounded-md p-0.5 pr-1.5">
           <div>
             <Tag />
           </div>
@@ -38,7 +38,7 @@ export const settingItem = ({
       );
     case CaseSetting.LIGHTNING:
       return (
-        <div className="flex items-center gap-1 bg-[#FFF7ED] rounded-md p-1 pr-1.5">
+        <div className="flex items-center gap-1 bg-[#FFF7ED] rounded-md p-0.5 pr-1.5">
           <div>
             <Lightning />
           </div>

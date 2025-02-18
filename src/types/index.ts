@@ -2,6 +2,7 @@ export enum Type {
   EDIT = "edit",
   CREATE = "create",
   DELETE = "delete",
+  ASSIGN = "assign",
 }
 
 export const enum CaseSetting {
@@ -12,6 +13,7 @@ export const enum CaseSetting {
 }
 
 export interface FormSettingValue {
+  id: number;
   title: string;
   content?: string;
   items: {
