@@ -29,3 +29,37 @@ body {
 .ant-menu .ant-menu-item, .ant-menu .ant-menu-submenu .ant-menu-submenu-title{
   padding-left: 16px !important;
 }
+
+.ant-menu .ant-menu-submenu-selected{
+  background: white;
+}
+
+.ant-menu .ant-menu-submenu-selected .ant-menu-title-content{
+  color: #3F3F46;
+  font-weight: 500;
+}
+
+.ant-tabs-nav-wrap{
+  border-top: 1px solid #A1A1AA3D;
+  border-bottom: 1px solid #A1A1AA3D;
+}
+
+:where(.css-dev-only-do-not-override-1yacf91).ant-tabs .ant-tabs-tab:hover {
+    color: #00C16A;
+}
+
+:where(.css-dev-only-do-not-override-1yacf91).ant-tabs .ant-tabs-ink-bar {
+    background: #00C16A;
+}
+
+:where(.css-dev-only-do-not-override-1yacf91) a:hover {
+    color: #18181B;
+}
+
+:where(.css-dev-only-do-not-override-1yacf91).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #18181B;
+}
+
+:where(.css-dev-only-do-not-override-1yacf91).ant-tabs .ant-tabs-tab-btn {
+    color: #71717A;
+}
